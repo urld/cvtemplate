@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Your Name}}}}} % First name
+
+	\vspace{6pt}
+
+	{\huge Software Engineer} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.55\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{BirthdayCake}{12}{Birthday}{1970-01-01}\\
+	\icon{At}{12}{Mail}{\href{mailto:foo@example.com}{foo@example.com}}\\
+	\icon{Phone}{12}{Phone}{+43 1234 5678}\\
+	\icon{Github}{12}{Github}{\href{https://github.com/urld}{github.com/urld}}\\
+	\icon{MapMarker}{12}{Address}{Street 5/7, 1234 Vienna}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	1 or 2 sentences about who you are. Short introduction only.
+
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.53\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{7}
+		\baritem{PC}{90}
+		\baritem{Nintendo}{50}
+		\baritem{PS 4}{65}
+	\end{barchart}
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+
+	\entry
+	{03/2020 -- now}
+	{Senior Lockdown Specialist}
+	{Homeoffice}
+	{Watching TV, playing the Witcher 3, Animalcrossing and CoD.
+		\\ \texttt{PC}\slashsep\texttt{PS4}\slashsep\texttt{Nintento Switch}
+	}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\pagebreak
+\cvsect{Education}
+\begin{entrylist}
+
+	\entry
+	{2020}
+	{Example Education}
+	{School Name or whatever}
+	{Description of education entry}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Languages}
+
+	\textbf{German} - native\\
+	\textbf{English} - proficient\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Hobbies}
+
+	List some hobbies
+	if there are any
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
